@@ -1,7 +1,9 @@
 'use strict';
 
-var path            = require('path');
-var Sails           = require('sails');
+process.env.NODE_ENV = 'testing';
+
+var path    = require('path');
+var Sails   = require('sails');
 var sails;
 
 before(function(done) {
